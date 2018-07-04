@@ -2,8 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="css/miscss.css">
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+		<!-- critical css -->
+		<style type="text/css">
+			body{margin:0;color:#424141;font-family:'PT Sans',sans-serif}.contenedor{margin:auto;width:800px}header{background-color:black;height:100px;margin:0}figure{display:inline-block;margin:0}article h3{padding:10px;margin:0}.nombre{color:white;display:inline-block;height:100px;position:relative;bottom:39px}.logo{float:left;height:100px;width:100px}.menu{display:inline-block;color:white;float:right;padding:0px 10px}.menu li{display:inline-block;margin:20px;text-decoration:none}.boton{background-color:red;border-radius:5px;height:15px;padding:10px;width:100px;font-size:18px}.principal{width:800px}.portada{margin:20px;background-color:#9fa2a3;height:545px}.descripcionprincipal{background-color:#eaeeef;border:1px solid black;bottom:175px;height:138px;left:250px;opacity:0.9;padding:10px;position:relative;width:380px}.avatar{width:100px;border-radius:150%}.division{display:flex;justify-content:space-between;margin:0px 0px 0px 0px}.fecha,.nombreusuario{display:flex;justify-content:center;align-items:center}.contenido{display:flex;justify-content:space-between;flex-direction:row}.imagenblogpost{height:167px;width:250px}.blogpost{width:30%}
+		</style>
+		<!-- critical css -->
 	</head>
 	<body>
 		<header>
@@ -19,13 +22,13 @@
 					<li>Blog</li>
 					<li>Precios</li>
 					<li>About</li>
-					<li class="boton">Inicia Sesión</li>
+					<a class="boton">Inicia Sesión</a>
 				</ul>
 			</nav>
 		</header>
 		<section class="portada">
 			<article class="contenedor">
-				<img class="principal" src="img/astronomy-constellation-cosmos-46168.jpg" alt="articulo sobre tuneles">
+				<img class="principal" data-src="img/astronomy-constellation-cosmos-46168.jpg" alt="articulo sobre tuneles">
 			</article>
 			<div class="descripcionprincipal">
 				<h3>
@@ -34,7 +37,7 @@
 				<hr>
 				<div class="division">
 					<div>
-						<img class="avatar" src="img/action-blur-electronics-247932.jpg" alt="avatar usuario">
+						<img class="avatar" data-src="img/action-blur-electronics-247932.jpg" alt="avatar usuario">
 					</div>
 					<span class="nombreusuario">
 						<h4>Duvan Gomez</h4>
@@ -47,7 +50,7 @@
 		</section>
 		<section class="contenido contenedor">
 			<article class="blogpost">
-				<img class="imagenblogpost" src="img/action-blur-close-up-735911.jpg" alt="">
+				<img class="imagenblogpost" data-src="img/action-blur-close-up-735911.jpg" alt="">
 				<div>
 					<h3>La ciberseguridad cada vez mas vulnerable</h3>
 				</div>
@@ -62,7 +65,7 @@
 				</div>
 			</article>
 			<article class="blogpost">
-				<img class="imagenblogpost" src="img/beautiful-close-up-computer-834949.jpg" alt="">
+				<img class="imagenblogpost" data-src="img/beautiful-close-up-computer-834949.jpg" alt="">
 				<div>
 					<h3>La realidad aumentada se toma colombia de la mano de Vrtual AR</h3>
 				</div>
@@ -77,7 +80,7 @@
 				</div>
 			</article>
 			<article class="blogpost">
-				<img class="imagenblogpost" src="img/cellphone-device-display-699122.jpg" alt="">
+				<img class="imagenblogpost" data-src="img/cellphone-device-display-699122.jpg" alt="">
 				<div>
 					<h3>Unboxing del ultimo celular de Apple el Iphone X</h3>
 				</div>
@@ -94,7 +97,7 @@
 		</section>
 		<section class="contenido contenedor">
 			<article class="blogpost">
-				<img class="imagenblogpost" src="img/business-businessmen-classroom-267507.jpg" alt="">
+				<img class="imagenblogpost" data-src="img/business-businessmen-classroom-267507.jpg" alt="">
 				<div>
 					<h3>La industria de los call center como funciona?</h3>
 				</div>
@@ -109,7 +112,7 @@
 				</div>
 			</article>
 			<article class="blogpost">
-				<img class="imagenblogpost" src="img/background-board-card-825262.jpg" alt="">
+				<img class="imagenblogpost" data-src="img/background-board-card-825262.jpg" alt="">
 				<div>
 					<h3>Analisis de los ultimos procesadores para dispositivos móviles</h3>
 				</div>
@@ -124,7 +127,7 @@
 				</div>
 			</article>
 			<article class="blogpost">
-				<img class="imagenblogpost" src="img/adult-competition-computers-929831.jpg" alt="">
+				<img class="imagenblogpost" data-src="img/adult-competition-computers-929831.jpg" alt="">
 				<div>
 					<h3>Cuales son trabajos mejor pagos en la industria tecnologica</h3>
 				</div>
@@ -141,7 +144,7 @@
 		</section>
 		<section class="contenido contenedor">
 			<article class="blogpost">
-				<img class="imagenblogpost" src="img/blur-computer-connection-442150.jpg" alt="">
+				<img class="imagenblogpost" data-src="img/blur-computer-connection-442150.jpg" alt="">
 				<div>
 					<h3>Como mantener tu centro de datos organizado sin morir en el intento</h3>
 				</div>
@@ -156,7 +159,7 @@
 				</div>
 			</article>
 			<article class="blogpost">
-				<img class="imagenblogpost" src="img/adult-business-computers-256219.jpg" alt="">
+				<img class="imagenblogpost" data-src="img/adult-business-computers-256219.jpg" alt="">
 				<div>
 					<h3>Un centro de monitoreo</h3>
 				</div>
@@ -171,7 +174,7 @@
 				</div>
 			</article>
 			<article class="blogpost">
-				<img class="imagenblogpost" src="img/business-computer-connection-450035.jpg" alt="">
+				<img class="imagenblogpost" data-src="img/business-computer-connection-450035.jpg" alt="">
 				<div>
 					<h3>Funciones de un diseñador grafico</h3>
 				</div>
@@ -188,7 +191,7 @@
 		</section>
 		<section class="contenido contenedor">
 			<article class="blogpost">
-				<img class="imagenblogpost" src="img/apple-coffee-computer-356056.jpg" alt="">
+				<img class="imagenblogpost" data-src="img/apple-coffee-computer-356056.jpg" alt="">
 				<div>
 					<h3>El orden en el lugar de trabajo</h3>
 				</div>
@@ -203,7 +206,7 @@
 				</div>
 			</article>
 			<article class="blogpost">
-				<img class="imagenblogpost" src="img/apps-blur-button-267350.jpg" alt="">
+				<img class="imagenblogpost" data-src="img/apps-blur-button-267350.jpg" alt="">
 				<div>
 					<h3>Comparacion de Play store y Apps store </h3>
 				</div>
@@ -218,7 +221,7 @@
 				</div>
 			</article>
 			<article class="blogpost">
-				<img class="imagenblogpost" src="img/aerial-view-clouds-nasa-23781.jpg" alt="">
+				<img class="imagenblogpost" data-src="img/aerial-view-clouds-nasa-23781.jpg" alt="">
 				<div>
 					<h3>Que tan vigilados estamos?</h3>
 				</div>
@@ -239,5 +242,28 @@
 		<footer>
 			
 		</footer>
+		<link rel="stylesheet" href="css/miscss.min.css">
+		<!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+		<!-- Google Fonts [ASYNC] -->
+		<script type="text/javascript">
+			WebFontConfig = {
+				google: { families: [ 'PT+Sans:300,400,500'] } };
+				(function() {
+					var wf = document.createElement('script');
+					wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+					wf.type = 'text/javascript';
+					wf.async = 'true';
+					var s = document.getElementsByTagName('script')[0];
+					s.parentNode.insertBefore(wf, s);
+				})();
+		</script>
+		<script type="text/javascript">
+			var bLazy = new Blazy({
+    		// options
+    		selector:'img'
+			});
+
+		</script>
 	</body>
 </html>

@@ -26,19 +26,20 @@ article h3{
 	display:inline-block;
 	height: 100px;
 	position: relative;
-	bottom: 32px;
+	bottom: 39px;
 }
 
 .logo{
 	float: left;
 	height: 100px;
 	width: 100px;
+
 }
 .menu{
 	display: inline-block;
 	color: white;
 	float: right;
-	
+	padding: 0px 10px;
 
 }
 .menu li{
@@ -49,7 +50,8 @@ article h3{
 }
 
 .menu li:hover{
-	
+	border-top:3px solid white;
+	transform: scale(1.2);
 }
 .boton{
 	background-color: red;
